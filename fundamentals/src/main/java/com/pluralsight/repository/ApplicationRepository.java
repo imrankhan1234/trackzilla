@@ -1,4 +1,7 @@
 package com.pluralsight.repository;
 
-public class ApplicationRepository {
+import com.pluralsight.entity.Application;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ApplicationRepository extends CrudRepository<Application, Long> {
 }
